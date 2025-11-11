@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import ProductsPage from './pages/ProductsPage';
+import ProductDetailPage from './pages/ProductDetailPage';
 import AboutUsPage from './pages/AboutUsPage';
 import ClientsPage from './pages/ClientsPage';
 import NewsPage from './pages/NewsPage';
@@ -36,6 +37,7 @@ const App = () => {
             <Routes location={location}>
               <Route path="/" element={<HomePage />} />
               <Route path="/products" element={<ProductsPage />} />
+              <Route path="/products/:productSlug" element={<ProductDetailPage />} />
               <Route path="/about-us" element={<AboutUsPage />} />
               <Route path="/clients" element={<ClientsPage />} />
               <Route path="/news" element={<NewsPage />} />

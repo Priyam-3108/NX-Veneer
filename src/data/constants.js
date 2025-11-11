@@ -17,43 +17,154 @@ export const NAV_LINKS = [
   { id: 'Contact', label: 'Contact Us', path: '/contact' },
 ];
 
-export const featuredProducts = [
+export const productCatalog = [
   {
-    name: 'Premium Oak Veneer',
-    image: 'https://placehold.co/800x600/C6B09C/1E1E1E?text=Premium+Oak',
-    description: 'Curated texture with a contemporary edge.',
+    slug: 'smoked-ash-burl',
+    name: 'Smoked Ash Burl',
+    category: 'Signature Veneers',
+    code: 'V-101',
+    heroImage: 'https://placehold.co/1600x1000/927E6A/F7F5F0?text=Smoked+Ash+Burl',
+    gallery: [
+      'https://placehold.co/1200x800/7F6A58/F8F3EE?text=Smoked+Ash+Detail',
+      'https://placehold.co/1200x800/6A5849/F5EEE6?text=Lobby+Installation',
+      'https://placehold.co/1200x800/8D7865/F6F0EA?text=Retail+Concept',
+    ],
+    summary: 'Dark, bookmatched veneer with a swirling grain that adds drama to flagship interiors.',
+    description:
+      'Smoked Ash Burl combines artisanal bookmatching with a deep fumed tone, offering a bold yet refined surface for statement millwork. Each sheet is balanced for continuity across walls, cabinetry, and feature ceilings.',
+    highlights: [
+      'Artisanal bookmatched grain sequencing',
+      'Fumed tonal depth for elevated warmth',
+      'Arrives pre-sanded for quick finishing in the shop',
+    ],
+    applications: ['Luxury hospitality lobbies', 'Flagship retail environments', 'Executive boardrooms', 'Statement cabinetry'],
+    finishes: ['Matte oil-rubbed', 'High-gloss lacquer', 'Open-pore polyurethane'],
+    specifications: [
+      { label: 'Sheet Size', value: '1220 x 2440 mm (4 x 8 ft)' },
+      { label: 'Thickness', value: '0.6 mm face veneer, 18 mm plywood core' },
+      { label: 'Backing', value: 'Balancing veneer on request' },
+      { label: 'Fire Rating', value: 'ASTM E84 Class B (upon request)' },
+      { label: 'Lead Time', value: '2 – 3 weeks for standard panels' },
+    ],
+    sustainability: {
+      certification: 'FSC Chain-of-Custody available',
+      statement: 'Sustainably harvested hardwood sourced from managed North American forests.',
+    },
   },
   {
-    name: 'Midnight Walnut Panel',
-    image: 'https://placehold.co/800x600/5B4636/F9F4EE?text=Midnight+Walnut',
-    description: 'Rich, smoky grains for timeless interiors.',
+    slug: 'silvered-walnut',
+    name: 'Silvered Walnut',
+    category: 'Architectural Panels',
+    code: 'V-118',
+    heroImage: 'https://placehold.co/1600x1000/6E5C4C/F3ECE4?text=Silvered+Walnut',
+    gallery: [
+      'https://placehold.co/1200x800/584838/F5EFE7?text=Hospitality+Suite',
+      'https://placehold.co/1200x800/7A6653/F8F1EA?text=Residential+Wall',
+      'https://placehold.co/1200x800/5E4E3F/F2EBE3?text=Showroom+Display',
+    ],
+    summary: 'Soft silver wash over American walnut for a contemporary, desaturated look.',
+    description:
+      'Silvered Walnut is pre-finished with a controlled desaturation process that softens the walnut grain without muting its character. The result is a panel that pairs effortlessly with stone, brass, and muted textiles.',
+    highlights: [
+      'Pre-toned finish eliminates on-site staining',
+      'UV-cured topcoat for enhanced abrasion resistance',
+      'Consistent color tolerance across production batches',
+    ],
+    applications: ['Boutique hospitality suites', 'Residential wall cladding', 'Boutique retail fixtures'],
+    finishes: ['Matte UV lacquer', 'Weathered satin', 'Wire-brushed texture'],
+    specifications: [
+      { label: 'Panel Size', value: '1220 x 2745 mm (4 x 9 ft)' },
+      { label: 'Thickness', value: '16 mm MDF core with veneer face' },
+      { label: 'Edge Detail', value: 'Square edge, eased edge available' },
+      { label: 'Weight', value: '11.8 kg/m²' },
+      { label: 'Fire Rating', value: 'EN 13501-1 B-s2, d0 (on request)' },
+    ],
+    sustainability: {
+      certification: 'CARB II compliant core',
+      statement: 'Finished using low-VOC coatings for healthier interiors.',
+    },
   },
   {
-    name: 'Satin Ash Finish',
-    image: 'https://placehold.co/800x600/DACBBE/2D2D2D?text=Satin+Ash',
-    description: 'Minimalist elegance with lasting warmth.',
+    slug: 'honey-elm',
+    name: 'Honey Elm',
+    category: 'Bespoke Veneers',
+    code: 'V-132',
+    heroImage: 'https://placehold.co/1600x1000/8C7663/F8F2EC?text=Honey+Elm',
+    gallery: [
+      'https://placehold.co/1200x800/9A826F/F6EFE8?text=Hospitality+Bar',
+      'https://placehold.co/1200x800/7D6655/F3ECE4?text=Residential+Cabinetry',
+      'https://placehold.co/1200x800/9F8775/F5EFE6?text=Hotel+Suite',
+    ],
+    summary: 'Warm-toned elm veneer with elongated cathedral grain for inviting hospitality spaces.',
+    description:
+      'Honey Elm balances golden undertones with a linear grain that visually expands interior volumes. Ideal for hospitality and residential millwork seeking approachable luxury.',
+    highlights: [
+      'Radiant undertones that uplift ambient lighting',
+      'Sequenced sets available for wrap-around installations',
+      'Accepts custom stains and glazing techniques',
+    ],
+    applications: ['Boutique hotel suites', 'Residential kitchens', 'Hospitality bars & lounges', 'Branded workplace lounges'],
+    finishes: ['Natural matte', 'Hand-rubbed oil', 'Cerused glaze'],
+    specifications: [
+      { label: 'Sheet Size', value: '1270 x 3050 mm (5 x 10 ft)' },
+      { label: 'Thickness', value: '0.6 mm veneer on phenolic core' },
+      { label: 'Matching Edge Banding', value: 'Prefinished ABS banding available' },
+      { label: 'Acoustic Backing', value: 'Micro-perforated option available' },
+      { label: 'Lead Time', value: '4 weeks including custom staining' },
+    ],
+    sustainability: {
+      certification: 'PEFC certified species',
+      statement: 'Harvested from responsibly managed European forests with full traceability.',
+    },
   },
   {
-    name: 'Desert Maple Layer',
-    image: 'https://placehold.co/800x600/B89F87/F5F0EA?text=Desert+Maple',
-    description: 'Organic tones ideal for hospitality spaces.',
+    slug: 'charred-oak',
+    name: 'Charred Oak',
+    category: 'Performance Surfaces',
+    code: 'V-146',
+    heroImage: 'https://placehold.co/1600x1000/5A4535/F0E9E0?text=Charred+Oak',
+    gallery: [
+      'https://placehold.co/1200x800/4B3A2E/EEE6DE?text=Restaurant+Facade',
+      'https://placehold.co/1200x800/6B5646/EEE5DC?text=Feature+Wall',
+      'https://placehold.co/1200x800/5A4637/F2EBE2?text=Hospitality+Reception',
+    ],
+    summary: 'Charring-inspired oak surface with a deep satin sheen and tactile brushed finish.',
+    description:
+      'Charred Oak interprets the traditional Shou Sugi Ban process into a stable, interior-ready panel. A multi-layer finishing system locks in the tactile texture while keeping surfaces easy to maintain.',
+    highlights: [
+      'Tactile brushed texture with satin sheen',
+      'High-performance topcoat resists fingerprints',
+      'Compatible with curved panel fabrication',
+    ],
+    applications: [
+      'Restaurant feature walls',
+      'Hospitality reception desks',
+      'Corporate lobby art walls',
+      'Premium residential joinery',
+    ],
+    finishes: ['Satin charcoal', 'Graphite glaze', 'Soft matte black'],
+    specifications: [
+      { label: 'Panel Size', value: '1220 x 3050 mm (4 x 10 ft)' },
+      { label: 'Thickness', value: '18 mm lightweight MDF core' },
+      { label: 'Texture Depth', value: '0.8 mm brushed relief' },
+      { label: 'Maintenance', value: 'Wipe with lint-free cloth; no solvents required' },
+      { label: 'Warranty', value: '10-year finish warranty' },
+    ],
+    sustainability: {
+      certification: 'Low-VOC finish system',
+      statement: 'Manufactured using recycled wood fibers with formaldehyde-free adhesives.',
+    },
   },
 ];
 
-export const productCollections = [
-  'https://placehold.co/800x600/927E6A/F7F5F0?text=Smoked+Ash+Burl',
-  'https://placehold.co/800x600/6E5C4C/F3ECE4?text=Silvered+Walnut',
-  'https://placehold.co/800x600/8C7663/F8F2EC?text=Honey+Elm',
-  'https://placehold.co/800x600/5A4535/F0E9E0?text=Charred+Oak',
-  'https://placehold.co/800x600/9F8775/F5EFE6?text=Oiled+Teak',
-  'https://placehold.co/800x600/7A6653/F8F1EA?text=Weathered+Birch',
-  'https://placehold.co/800x600/6B5646/EEE5DC?text=Bronzed+Walnut',
-  'https://placehold.co/800x600/9C836E/F6EFE7?text=Ivory+Maple',
-  'https://placehold.co/800x600/7D6655/F2EBE3?text=Desert+Mahogany',
-  'https://placehold.co/800x600/8A6F5A/F5EEE4?text=Forest+Walnut',
-  'https://placehold.co/800x600/AC947F/F7F1EA?text=Pearl+Oak',
-  'https://placehold.co/800x600/6F5847/EEE6DE?text=Sandstone+Elm',
-];
+export const productCollections = productCatalog;
+
+export const featuredProducts = productCatalog.slice(0, 4).map(({ slug, name, heroImage, summary }) => ({
+  slug,
+  name,
+  image: heroImage,
+  description: summary,
+}));
 
 export const values = [
   {

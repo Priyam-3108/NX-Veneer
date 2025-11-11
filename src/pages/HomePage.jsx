@@ -63,6 +63,7 @@ const HomePage = () => {
                 <p className="text-sm text-neutral-600">{product.description}</p>
                 <button
                   type="button"
+                  onClick={() => navigate(`/products/${product.slug}`)}
                   className="inline-flex items-center text-sm font-semibold text-amber-900 transition-all duration-300 group-hover:translate-x-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-stone-100"
                 >
                   View Details
