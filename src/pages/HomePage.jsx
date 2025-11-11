@@ -6,8 +6,15 @@ import HeroSection from '../components/HeroSection';
 import { featuredProducts } from '../data/constants';
 import ScrollReveal from '../components/ScrollReveal';
 import TransformShowcase from '../components/TransformShowcase';
+import usePageMetadata from '../hooks/usePageMetadata';
 
 const HomePage = () => {
+  usePageMetadata({
+    title: 'Home',
+    description:
+      'Discover Veneer’s premium wood veneer collections, bespoke surfaces, and design-led finishes crafted for luxury residential and commercial interiors.',
+  });
+
   const navigate = useNavigate();
 
   return (

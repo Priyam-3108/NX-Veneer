@@ -3,9 +3,17 @@ import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { newsItems } from '../data/constants';
 import ScrollReveal from '../components/ScrollReveal';
+import usePageMetadata from '../hooks/usePageMetadata';
 
-const NewsPage = () => (
-  <div className="space-y-12">
+const NewsPage = () => {
+  usePageMetadata({
+    title: 'News & Events',
+    description:
+      'Stay informed with Veneer news, events, and sustainability initiatives shaping the future of premium architectural surfaces.',
+  });
+
+  return (
+    <div className="space-y-12">
     <ScrollReveal as="header" className="space-y-4 fade-in-up">
       <p className="text-xs font-semibold uppercase tracking-[0.3em] text-neutral-500">Insights</p>
       <h1 className="text-4xl font-semibold text-neutral-900 md:text-5xl">News & Events</h1>
@@ -76,8 +84,9 @@ const NewsPage = () => (
         </form>
       </div>
     </ScrollReveal>
-  </div>
-);
+    </div>
+  );
+};
 
 export default NewsPage;
 

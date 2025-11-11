@@ -3,9 +3,17 @@ import { motion } from 'framer-motion';
 import { ChevronRight } from 'lucide-react';
 import { contactMethods } from '../data/constants';
 import ScrollReveal from '../components/ScrollReveal';
+import usePageMetadata from '../hooks/usePageMetadata';
 
-const ContactPage = () => (
-  <div className="space-y-12">
+const ContactPage = () => {
+  usePageMetadata({
+    title: 'Contact',
+    description:
+      'Connect with the Veneer studio to discuss custom veneer projects, schedule a showroom visit, or request samples and partnership details.',
+  });
+
+  return (
+    <div className="space-y-12">
     <ScrollReveal as="header" className="space-y-4 text-center md:text-left fade-in-up">
       <p className="text-xs font-semibold uppercase tracking-[0.3em] text-neutral-500">Connect</p>
       <h1 className="text-4xl font-semibold text-neutral-900 md:text-5xl">Contact Us</h1>
@@ -114,8 +122,9 @@ const ContactPage = () => (
         <ChevronRight className="ml-2 h-4 w-4" />
       </button>
     </ScrollReveal>
-  </div>
-);
+    </div>
+  );
+};
 
 export default ContactPage;
 

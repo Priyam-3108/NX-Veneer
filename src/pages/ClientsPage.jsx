@@ -3,9 +3,17 @@ import { motion } from 'framer-motion';
 import { ChevronRight } from 'lucide-react';
 import { clientLogos } from '../data/constants';
 import ScrollReveal from '../components/ScrollReveal';
+import usePageMetadata from '../hooks/usePageMetadata';
 
-const ClientsPage = () => (
-  <div className="space-y-12">
+const ClientsPage = () => {
+  usePageMetadata({
+    title: 'Clients',
+    description:
+      'Explore Veneer collaborations with visionary brands and design studios, showcasing flagship environments finished with premium veneer surfaces.',
+  });
+
+  return (
+    <div className="space-y-12">
     <ScrollReveal as="header" className="space-y-4 text-center md:text-left fade-in-up">
       <p className="text-xs font-semibold uppercase tracking-[0.3em] text-neutral-500">Collaborations</p>
       <h1 className="text-4xl font-semibold text-neutral-900 md:text-5xl">Trusted By The Best</h1>
@@ -76,8 +84,9 @@ const ClientsPage = () => (
         />
       </div>
     </ScrollReveal>
-  </div>
-);
+    </div>
+  );
+};
 
 export default ClientsPage;
 

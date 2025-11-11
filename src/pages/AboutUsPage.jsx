@@ -2,9 +2,17 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { values, teamMembers } from '../data/constants';
 import ScrollReveal from '../components/ScrollReveal';
+import usePageMetadata from '../hooks/usePageMetadata';
 
-const AboutUsPage = () => (
-  <div className="space-y-16">
+const AboutUsPage = () => {
+  usePageMetadata({
+    title: 'About Us',
+    description:
+      'Learn about Veneer’s story, decades of craftsmanship, sustainable sourcing, and the design team creating bespoke veneer experiences worldwide.',
+  });
+
+  return (
+    <div className="space-y-16">
     <ScrollReveal as="section" className="overflow-hidden rounded-3xl bg-stone-900 text-stone-100 fade-in-up">
       <div className="grid gap-8 md:grid-cols-[1.2fr_0.8fr]">
         <div className="flex flex-col justify-center space-y-6 px-8 py-16 text-neutral-50 md:px-12 lg:px-16">
@@ -135,8 +143,9 @@ const AboutUsPage = () => (
         ))}
       </div>
     </ScrollReveal>
-  </div>
-);
+    </div>
+  );
+};
 
 export default AboutUsPage;
 

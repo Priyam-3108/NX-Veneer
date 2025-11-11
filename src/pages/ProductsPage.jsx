@@ -3,9 +3,17 @@ import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { productCollections } from '../data/constants';
 import ScrollReveal from '../components/ScrollReveal';
+import usePageMetadata from '../hooks/usePageMetadata';
 
-const ProductsPage = () => (
-  <div className="space-y-12">
+const ProductsPage = () => {
+  usePageMetadata({
+    title: 'Products',
+    description:
+      'Browse Veneer’s curated range of premium wood veneers, exotic burls, and specialty finishes tailored for architects, designers, and bespoke millwork.',
+  });
+
+  return (
+    <div className="space-y-12">
     <ScrollReveal as="header" className="space-y-4 fade-in-up">
       <p className="text-xs font-semibold uppercase tracking-[0.3em] text-neutral-500">
         curated range
@@ -61,8 +69,9 @@ const ProductsPage = () => (
         </motion.article>
       ))}
     </ScrollReveal>
-  </div>
-);
+    </div>
+  );
+};
 
 export default ProductsPage;
 
