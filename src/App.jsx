@@ -10,6 +10,7 @@ import AboutUsPage from './pages/AboutUsPage';
 import ClientsPage from './pages/ClientsPage';
 import NewsPage from './pages/NewsPage';
 import ContactPage from './pages/ContactPage';
+import NotFoundPage from './pages/NotFoundPage';
 import ScrollProgressBar from './components/ScrollProgressBar';
 import ScrollToTop from './components/ScrollToTop';
 import BackToTopButton from './components/BackToTopButton';
@@ -42,6 +43,7 @@ const App = () => {
               <Route path="/clients" element={<ClientsPage />} />
               <Route path="/news" element={<NewsPage />} />
               <Route path="/contact" element={<ContactPage />} />
+              <Route path="*" element={<NotFoundPage />} />
             </Routes>
           </motion.div>
         </AnimatePresence>
